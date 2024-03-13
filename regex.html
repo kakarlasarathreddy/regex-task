@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regex Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #da6969;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 20px;
+            background-color: #0e4d7d;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #2449cf;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #004494;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Regex Result</h2>
+    <p> Your Pattern is : {{ Pattern }}</p>
+    <p>Your Text is : {{ text }}</p>
+    <h3>Your Matches:</h3>
+    <ul>
+    {% for match in matches %}
+        <li>{{ match }}</li>
+    {% endfor %}
+    </ul>
+    <a href="/">Back To Home</a>
+</body>
+</html>
+
+
+
